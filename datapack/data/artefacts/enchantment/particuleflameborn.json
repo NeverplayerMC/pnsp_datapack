@@ -1,0 +1,51 @@
+{
+  "description": {
+    "text": "FlameBorn",
+    "color": "#e61700"
+  },
+  "supported_items": "minecraft:command_block",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "armor"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "periodic_tick": 100
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "artefacts:enchantments/fireproof"
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "artefacts:enchantments/fireproofparticule"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "periodic_tick": 1
+          }
+        }
+      }
+    ]
+  }
+}

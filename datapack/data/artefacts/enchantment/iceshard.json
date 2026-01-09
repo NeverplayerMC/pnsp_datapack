@@ -1,0 +1,51 @@
+{
+  "description": {
+    "text": "Coldness",
+    "color": "#08e0fd"
+  },
+  "supported_items": "prismarine_shard",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:slowness",
+          "min_duration": 1,
+          "max_duration": 2,
+          "min_amplifier": 1,
+          "max_amplifier": 1
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:attack_damage",
+        "id": "mnmmsad",
+        "amount": 9,
+        "operation": "add_value"
+      },
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "ioklio",
+        "amount": -1,
+        "operation": "add_value"
+      }
+    ]
+  }
+}

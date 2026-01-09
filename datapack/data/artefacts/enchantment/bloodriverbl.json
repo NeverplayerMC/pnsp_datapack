@@ -1,0 +1,41 @@
+{
+  "anvil_cost": 0,
+  "description": {
+    "text": "LifeSteal",
+    "color": "#b30000"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "artefacts:enchantments/lifestealbl"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "dasdzdsdw",
+        "amount": -0.6,
+        "operation": "add_value"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "minecraft:iron_sword",
+  "weight": 1
+}
