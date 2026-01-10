@@ -1,5 +1,5 @@
 effect give @s minecraft:regeneration 1 2 true
 
-say nigga
+say ni
 
-execute as @a run say nigg
+execute as @a run say nii

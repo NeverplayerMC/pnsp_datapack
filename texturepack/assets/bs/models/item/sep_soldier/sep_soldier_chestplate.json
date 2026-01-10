@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "bs:item/sep_soldier/soldier_sep_chestplate"
+  }
+
+}

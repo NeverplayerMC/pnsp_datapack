@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "hit_with_sep_soldier_set": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "player",
+            "predicate": "bs:test_for_sep_soldier"
+          }
+        },
+        "damage": {
+          "type": {
+            "is_direct": true,
+            "source_entity": {
+              "type": "minecraft:player"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "bs:apply_wither"
+  }
+}

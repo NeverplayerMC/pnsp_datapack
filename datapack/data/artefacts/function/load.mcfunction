@@ -1,1 +1,5 @@
-say Nigga
+say PNSP Datapack V0.1
+
+say Testing Sets Method Initialising...
+function artefacts:test_for_set
+say Testing Sets Method Initialied...
