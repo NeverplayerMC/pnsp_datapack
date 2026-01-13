@@ -1,3 +1,4 @@
+say Loading Datapack
 say PNSP Datapack V0.1
 
 say Testing Sets Method Initialising...
